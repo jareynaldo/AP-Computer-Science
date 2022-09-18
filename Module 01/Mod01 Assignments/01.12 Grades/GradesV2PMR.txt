@@ -1,0 +1,47 @@
+<+> Since I always try and follow the programming principle of DNRY I knew that
+ I had to optimize the problem right away. I found a for loop would be most 
+ effective for this particular task and I was successfully able to implement 
+ this. I am very happy I was able to successfully implement a loop in java and 
+ work with variables successfully. 
+
+(-) The only major problem I had was when it came to calculating the test scores 
+averages. I was getting an int answer even tho it should have been a double. 
+But then I remembered how casting works and realized it would successfully work 
+in this case. 
+
++ I had a very fun time with this project and the new challenges it brought up. 
+I was even able to optimize the program further with fewer variables (a version 
+I did not submit) and was very helpful in trying to further develop my coding 
+abilities. 
+
+
+/**
+ * this program that will calculate the total points and average grade each time
+ * a new score is added to the total.
+ * tickets sold and the amount of money received.
+ * 
+ * @author Jose Reynaldo
+ * @version 09/11/2022
+ */
+public class GradesV2 {
+
+    public static void main(String[] args) {
+        // local variables
+        int numTests = 0; // counts number of tests
+        int testGrade = 0; // individual test grade
+        int totalPoints = 0; // total points for all tests
+        double average = 0.0; // average grade2
+
+        int[] testScores = { 95, 73, 91, 82, 34, 73, 100, 76, 99 };
+
+        for (int i = 0; i < testScores.length; i++) {
+            numTests++;
+            testGrade = testScores[i];
+            totalPoints += testScores[i];
+            average = ((double) totalPoints) / numTests;
+            System.out.println("Test # " + numTests + "\t" + "Test Grade: " + testGrade + "\t" + "Total Points: "
+                    + totalPoints + "\t" + "Average Scores: " + average);
+        }
+
+    }
+}
