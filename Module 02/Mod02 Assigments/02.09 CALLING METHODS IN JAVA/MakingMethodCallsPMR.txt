@@ -1,0 +1,64 @@
+<+> I was able to pratice calling methods (or functions in JS) 
+again which was fun. It reminded me of how larger projects work 
+and looking into the future with more complicated code. 
+
+<-> I accidently named the file two diffrent things without 
+realizing so I had to recheck every line of code twice before 
+catching my mistake. 
+
++ I learned how to call mathods in java and how similar it is 
+to doing it in C++ which I was not expecting.
+
+
+
+
+/**
+ * Without modifying any of the method signatures, correct add method calls to
+ * the already created methods in the main() below
+ *
+ * APCS Team 2020 (Edited by: Jose Reynaldo)
+ * 12/10/2022
+ */
+public class MakingMethodCalls
+
+{
+    public static void addTheseTwo() {
+        System.out.println("Ten plus five equals " + (10 + 5));
+    }
+
+    public static void multiplyTheseTwo(int a, int b) {
+        System.out.println("Ten times five equals " + (a * b));
+    }
+
+    public static int divideTheseTwo(int a, int b) {
+        return (a / b);
+    }
+
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 5;
+
+        /**
+         * Insert code here that calls one of the above methods that results in.
+         * computer printing out "Ten plus five equals 15"
+         */
+
+        addTheseTwo();
+
+        /**
+         * Insert code here that calls one of the above methods that results in.
+         * computer printing out "Ten times five equals 50"
+         */
+
+        multiplyTheseTwo(x, y);
+
+        /**
+         * Insert code here that calls one of the above methods that results in.
+         * computer printing out "Ten divided by five equals 2"
+         */
+
+        int two = divideTheseTwo(x, y);
+        System.out.println("Ten divided by five equals " + two);
+
+    }// end of main method
+}// end of class

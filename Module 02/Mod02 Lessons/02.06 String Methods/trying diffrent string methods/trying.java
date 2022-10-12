@@ -23,9 +23,8 @@ public class trying {
         String yesnan = name.substring(x, x + 3);
         System.out.println(yesnan);
 
-        Scanner in;
-        in = new Scanner(System.in);
-        System.out.print("Please enter an integer value: ");
-        int intValue = in.nextInt();
+        String oldString = "Programming";
+        System.out.println(oldString.indexOf("g"));
+
     }
 }

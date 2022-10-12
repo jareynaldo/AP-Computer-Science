@@ -26,11 +26,11 @@ public class ShowASCII {
         // concatenate characters to form a message
         System.out.println("My message: " + (char) 72 + (char) 105 + (char) 33);
 
-        char letterA = 'A';
-        char aDash = '-';
-        char blankSpace = ' '; // there is a blank space between the quotes
-        char eighthDigit = '8';
-        System.out.println(letterA);
+        // char letterA = 'A';
+        // char aDash = '-';
+        // char blankSpace = ' '; // there is a blank space between the quotes
+        // char eighthDigit = '8';
+        // System.out.println(letterA);
 
         System.out.println('8' + '2');
         System.out.println("124" + "232");
