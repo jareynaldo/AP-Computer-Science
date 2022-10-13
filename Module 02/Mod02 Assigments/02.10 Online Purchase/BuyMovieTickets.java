@@ -85,14 +85,14 @@ public class BuyMovieTickets {
         String debitPin = in.next();
         debitPin = checkIfCorrect("pin number", askingForPin, debitPin, 4);
 
-        System.out.print("Anything we should know? ");
+        System.out.print("Anything we should know? ");// check for acomedations
         String acomedations = in.next();
         acomedations += in.nextLine();
 
-        String fullName = firstname.substring(0, 1) + ". " + lastName;
+        String fullName = firstname.substring(0, 1) + ". " + lastName; // fix variables before they're sent out
         debitNum = "#####-###-" + debitNum.substring(10);
 
         printReceipt(todayDate, fullName, fullName.substring(0, 1), debitNum, movieName, howMany, howMuchEach,
-                acomedations);
+                acomedations); // printing the receipt
     }
 }
