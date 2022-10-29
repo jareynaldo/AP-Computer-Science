@@ -27,5 +27,9 @@ public class GPAV1 {
 
         System.out.println("GPA: " + average);
         System.out.println("Eligible: " + isEligible);
+
+        if (12 / 5 != 2.0) {
+            System.out.println(true);
+        }
     }
 }
