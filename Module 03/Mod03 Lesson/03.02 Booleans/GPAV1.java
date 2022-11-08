@@ -6,7 +6,7 @@
  * @author George Boole
  * @version 06/04/17
  */
-import java.til.Scanner;
+import java.util.Scanner;
 
 public class GPAV1 {
     public static void main(String[] args) {
