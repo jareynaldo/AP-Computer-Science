@@ -8,7 +8,7 @@
  */
 import java.util.Scanner;
 
-public class BMI {
+public class bmi {
 
     public static double shortenInt(double x) {
         int temp = (int) (x * 100.0);
@@ -36,21 +36,23 @@ public class BMI {
 
         double inRestOfWorld = heightInAmerican * 0.0254;
 
-        double BMI = weight / (inRestOfWorld * inRestOfWorld);
+        double bmi = weight / (inRestOfWorld * inRestOfWorld);
 
         double heightInMeters = shortenInt(inRestOfWorld);
-        double publishableBMI = shortenInt(BMI);
+        double publishableBMI = shortenInt(bmi);
         double publishableWeight = shortenInt(weight);
 
         String catagory = "";
-        if (BMI >= 29.9)
-            catagory = "Obese";
-        else if (BMI >= 25 && BMI <= 29.9)
-            catagory = "Overweight";
-        else if (BMI >= 18.5 && BMI <= 24.9)
-            catagory = "Normal or Healthy Weight";
-        else
+
+        if (bmi < 18.5)
             catagory = "Underweight";
+
+        else if (bmi <= 24.9)
+            catagory = "Normal or Healthy Weight";
+        else if (bmi <= 29.9)
+            catagory = "Overweight";
+        else
+            catagory = "Obese";
 
         System.out.println("Body Mass Index Calculator");
         System.out.println("==========================");
