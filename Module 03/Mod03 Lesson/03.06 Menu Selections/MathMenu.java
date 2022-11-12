@@ -36,29 +36,45 @@ public class MathMenu {
         System.out.println();
 
         // Perform requested arithmetic and print answer
-        if (choice.equalsIgnoreCase("A")) {
+        if (choice.equalsIgnoreCase("A")) { // this is horrible and repetetive and i would find a much simpler solution
+                                            // if it wa not for the lack of time.
             System.out.println("You chose A for addition");
             System.out.print(num1 + " plus " + num2 + " equals ");
             answer = num1 + num2;
             System.out.println(answer);
         }
-        if (choice.equalsIgnoreCase("S")) {
+        // insert other menus below
+        else if (choice.equalsIgnoreCase("S")) {
 
             System.out.println("You chose S for Subtraction");
             System.out.print(num1 + " plus " + num2 + " equals ");
             answer = num1 - num2;
             System.out.println(answer);
-        }
-        if (choice.equalsIgnoreCase("M")) {
+        } else if (choice.equalsIgnoreCase("M")) {
 
-            System.out.println("You chose M for Subtraction");
+            System.out.println("You chose M for Multiplication");
             System.out.print(num1 + " plus " + num2 + " equals ");
-            answer = num1 - num2;
+            answer = num1 * num2;
             System.out.println(answer);
-        }
-        // missing other menu options
-        else {
+        } else if (choice.equalsIgnoreCase("M")) {
+
+            System.out.println("You chose D for Division");
+            System.out.print(num1 + " plus " + num2 + " equals ");
+            answer = num1 / num2;
+            System.out.println(answer);
+        } else if (choice.equalsIgnoreCase("M")) {
+
+            System.out.println("You chose R for Remainder");
+            System.out.print(num1 + " plus " + num2 + " equals ");
+            answer = num1 % num2;
+            System.out.println(answer);
+        } else if (choice.equalsIgnoreCase("Q")) {
+
+            System.out.println("You chose Q for Quit");
+            System.out.println("Goodbye");
+        } else {
             System.out.println("You did not choose a valid menu option!");
         }
+
     }// end of main method
 }// end of class
