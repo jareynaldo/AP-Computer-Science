@@ -1,18 +1,3 @@
-(+)I was able to sucsesfully use an if else if strucutre inside of a program. I 
-had a fun time working with this slightly more complicated program as i was able 
-to incorportate many different aspects into a single program. 
-
-(-) The biggest challenge in this program was when i tried to shorten the double 
-values that i had recived after i did my calculations. I tried several different 
-methods which included converting into string and using "substring" but ended 
-up deciding that simply implimenting the method i added was the simpelest solution.
-
-+ This project taught me to include many different concepts together into one whole 
-cohesive program. I was able to learn how to work with if else if statements in java
-and sucsesfully implimented the challenge that was asked of me. 
-
-
-
 
 /**
  * This program illustrates the use of the if-else-if structure 
@@ -23,7 +8,7 @@ and sucsesfully implimented the challenge that was asked of me.
  */
 import java.util.Scanner;
 
-public class bmi {
+public class bmiV2 {
 
     public static double shortenInt(double x) {
         int temp = (int) (x * 100.0);
