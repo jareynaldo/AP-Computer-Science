@@ -1,3 +1,17 @@
+(+)I was able t o sucsesfully ask a user for input in order to determine the users 
+TDEE. I had a fun time with the .equals and .equalsIgnoreCase functions as i had 
+never used them before and quickly proved their utility.  
+
+(-) The biggest challenge in this program was the repetetive nature of the progam which
+i know could easily be obtemized. More frustration seeking to further my journey more 
+than anything.
+
++ This project has helped me truly understand the differences of datatypes of how
+simple datatypes differ form objects and the incredible things which can be done 
+not only with the provided functions but also with your own custom functions. 
+
+
+
 
 /**
  * This program illustrates the use of the
@@ -35,8 +49,8 @@ public class TDEE {
         System.out.print("Enter the letter of correspoinding to your activity level: ");
         String choice = in.next();
         if (choice.equalsIgnoreCase("A") || choice.equalsIgnoreCase("B") || choice.equalsIgnoreCase("C")// logic to make
-                                                                                                        // sure it's the
-                                                                                                        // correct input
+                                                                                                        // sure correct
+                                                                                                        // input
                 || choice.equalsIgnoreCase("D") || choice.equalsIgnoreCase("E") || choice.equalsIgnoreCase("F")) {
 
         } else {
