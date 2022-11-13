@@ -37,7 +37,7 @@ public class MathMenu {
 
         // Perform requested arithmetic and print answer
         if (choice.equalsIgnoreCase("A")) { // this is horrible and repetetive and i would find a much simpler solution
-                                            // if it wa not for the lack of time.
+                                            // if it was not for the lack of time.
             System.out.println("You chose A for addition");
             System.out.print(num1 + " plus " + num2 + " equals ");
             answer = num1 + num2;
