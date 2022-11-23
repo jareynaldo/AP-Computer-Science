@@ -13,33 +13,36 @@ import java.io.IOException;
 public class TextFileReaderV1 {
     public static void main(String[] args) throws IOException {
 
-        // String token = "";
-        // File fileName = new File("data1.txt");
-        // Scanner inFile = new Scanner(fileName);
-
-        // // while loop will continue while inFile has a next token to read
-        // while (inFile.hasNext()) {
-        // token = inFile.next(); // read next token from file
-        // System.out.println(token); // print value of token
-        // } // end while
-
-        // inFile.close(); // close input file
-
         String token = "";
-        int intToken = 0;
-        File fileName = new File("data3.txt");
+        File fileName = new File("data1.txt");
         Scanner inFile = new Scanner(fileName);
         int total = 0;
 
         // while loop will continue while inFile has a next token to read
         while (inFile.hasNext()) {
-            intToken = inFile.nextInt(); // read next token from file
-            System.out.println(intToken); // print value of token
-            total += intToken;
+            token = inFile.next(); // read next token from file
+            System.out.println(token); // print value of token
+            total++;
         } // end while
 
-        System.out.println("\nTotal: " + total);
+        System.out.println(total);
         inFile.close(); // close input file
+
+        // String token = "";
+        // int intToken = 0;
+        // File fileName = new File("data3.txt");
+        // Scanner inFile = new Scanner(fileName);
+        // int total = 0;
+
+        // // while loop will continue while inFile has a next token to read
+        // while (inFile.hasNext()) {
+        // intToken = inFile.nextInt(); // read next token from file
+        // System.out.println(intToken); // print value of token
+        // total += intToken;
+        // } // end while
+
+        // System.out.println("\nTotal: " + total);
+        // inFile.close(); // close input file
 
     }// end of main method
 }// end of class
