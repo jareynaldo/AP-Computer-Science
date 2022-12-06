@@ -42,7 +42,7 @@ public class SecretPasscode {
 
         int randomNum;
         for (int i = 0; i < passLength; i++) {
-            randomNum = (int) (Math.random() * 255) + 33;
+            randomNum = (int) (Math.random() * 223) + 33;
             password += (char) randomNum;
         }
         outFile.println(password);
