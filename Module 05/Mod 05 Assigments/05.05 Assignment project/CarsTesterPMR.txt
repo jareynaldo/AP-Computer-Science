@@ -1,3 +1,17 @@
+<+> I enjoyed doing something like messing around with cars 
+in a program for the first time. I really enjoyed the new 
+complexety of the program and the new things this allows me 
+to do. 
+
+<-> the only thing i really had a problem with was setting 
+primative value types for variables but once i got that figured 
+out i had an easy time with the rest of it. 
+
++ I learned a lot through this project. I have enjoyed learning 
+amout OOP a lot and being able to imploment it has been tremendous. 
+
+
+
 /**
  * @purpose: to test the Cars class
  *
